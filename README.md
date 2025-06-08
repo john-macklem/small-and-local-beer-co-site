@@ -30,3 +30,9 @@ npm start
 
 This will start the Next.js server on port 3000.
 
+
+## Running Tests
+
+```bash
+npm test
+```
