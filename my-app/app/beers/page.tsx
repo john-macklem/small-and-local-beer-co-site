@@ -17,11 +17,11 @@ const beers = [
 
 export default function Beers() {
   return (
-    <main className="p-8">
-      <h1 className="text-2xl font-bold mb-6">Beers</h1>
+    <main className="p-8 max-w-5xl mx-auto">
+      <h1 className="text-3xl font-semibold mb-6">Beers</h1>
       <div className="grid sm:grid-cols-2 gap-6">
         {beers.map((beer) => (
-          <div key={beer.name} className="border rounded overflow-hidden">
+          <div key={beer.name} className="bg-white rounded shadow overflow-hidden">
             <img
               src={beer.img}
               alt={beer.name}

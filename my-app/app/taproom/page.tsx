@@ -1,7 +1,7 @@
 export default function Taproom() {
   return (
-    <main className="p-8 space-y-4">
-      <h1 className="text-2xl font-bold">Taproom</h1>
+    <main className="p-8 space-y-4 max-w-5xl mx-auto">
+      <h1 className="text-3xl font-semibold">Taproom</h1>
       <p>
         Our taproom is open Wednesday through Sunday with rotating beers on tap
         and a laid-back atmosphere. Stop by to sample the latest brews and meet

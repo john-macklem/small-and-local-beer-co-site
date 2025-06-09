@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Playfair_Display, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
 });
 
 const geistMono = Geist_Mono({
@@ -25,17 +30,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${playfair.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="p-4 bg-[--color-primary] text-white">
-          <nav className="flex gap-4">
-            <a href="/" className="font-bold">Home</a>
-            <a href="/beers">Beers</a>
-            <a href="/taproom">Taproom</a>
-            <a href="/order">Order</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-          </nav>
+        <header className="bg-[--color-primary] text-white">
+          <div className="max-w-5xl mx-auto flex justify-between items-center p-4">
+            <a href="/" className="font-display text-xl font-semibold">
+              Small &amp; Local
+            </a>
+            <nav className="flex gap-4 text-sm md:text-base">
+              <a href="/beers">Beers</a>
+              <a href="/taproom">Taproom</a>
+              <a href="/order">Order</a>
+              <a href="/about">About</a>
+              <a href="/contact">Contact</a>
+            </nav>
+          </div>
         </header>
         {children}
         <footer className="p-4 bg-[--color-dark] text-white text-center mt-8">
