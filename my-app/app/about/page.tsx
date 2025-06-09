@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <main className="p-8 space-y-4">
-      <h1 className="text-2xl font-bold">About Us</h1>
+    <main className="p-8 space-y-4 max-w-5xl mx-auto">
+      <h1 className="text-3xl font-semibold">About Us</h1>
       <p>
         Small and Local Beer Co. began brewing in 2018 with a simple mission: to
         bring fresh, neighborhood-focused beer to Ottawa. We believe in keeping

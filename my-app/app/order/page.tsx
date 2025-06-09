@@ -1,7 +1,7 @@
 export default function Order() {
   return (
-    <main className="p-8 space-y-4">
-      <h1 className="text-2xl font-bold">Order</h1>
+    <main className="p-8 space-y-4 max-w-5xl mx-auto">
+      <h1 className="text-3xl font-semibold">Order</h1>
       <p>
         We partner with a local delivery service so you can enjoy our beers at
         home. Click the link below to visit our online shop and schedule a

@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <main className="p-8 space-y-4">
-      <h1 className="text-2xl font-bold">Contact</h1>
+    <main className="p-8 space-y-4 max-w-5xl mx-auto">
+      <h1 className="text-3xl font-semibold">Contact</h1>
       <p>
         Reach us anytime at
         <a href="mailto:info@smallandlocalbeer.co" className="underline ml-1">
